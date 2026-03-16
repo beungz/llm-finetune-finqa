@@ -34,6 +34,11 @@ Mistral-7B-Instruct-v0.3 is chosen for the best balance of reasoning capability 
 | Adapter (QLoRA) | r=16, alpha=32 | Targeted attention and projection layers for efficient learning. |
 | Context Window | 1,750 Tokens | Captured 95% of long financial documents without truncating the final answers. |
 | Batch Strategy | Batch=2, Grad Acc=4 | Maintained an effective batch size of 8 to prevent out-of-memory (OOM) crashes. |
+
+Due to large file size (160 MB), LoRA adapter file, adapter_model.safetensors, are excluded from this github repos. It can be downloaded separately from the following Huggingface repos:<br>
+https://huggingface.co/beung/aipi590-project1/resolve/main/adapter_model.safetensors
+<br>
+After download complete, please put it in FinQA-LoRA-Adaptor folder.<br>
 <br>
 
 
